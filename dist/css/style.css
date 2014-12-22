@@ -17,7 +17,7 @@ body{
    		 	justify-content: center;
 		}
 		
-		.loader {
+.loader {
   font-size: 90px;
   text-indent: -9999em;
   overflow: hidden;
