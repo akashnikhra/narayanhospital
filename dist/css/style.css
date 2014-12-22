@@ -1,0 +1,140 @@
+body{
+	padding-top: 50px;
+}
+
+#logo{
+	margin-top: -15px;
+	opacity: 0.7;
+	transition: opacity 0.7s;
+	-webkit-transition: opacity 0.7s;
+	-moz-transition: opacity 0.7s;
+}
+#logo:hover{
+	opacity: 1;
+}
+
+.carousel-inner h4{
+	font-size: 30px;
+}
+
+.navi{
+	height: 70px;
+}
+
+.fa-plus-square{
+	color: #e74c3c;
+}
+
+.carousel-indicators>li{
+	background: #1abc9c;
+}
+
+
+.img-responsive{
+	-webkit-filter: brightness(0.5);
+	-moz-filter: brightness(0.5);
+	filter:  brightness(0.5);
+}
+
+.profile {
+    position:relative;
+    overflow:hidden;
+    padding: 0px;
+    padding-left: 0px;
+}
+ 
+.pro {
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(0,0,0, 0.6);
+    width:100%;
+    height:100%;
+    padding:2%;
+    display: none;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+}
+.link{
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	width: 70%;
+}
+.link:hover{
+ 	transform: scale(1.1); 
+ 	-webkit-transform: scale(1.1);
+ 	-moz-transform: scale(1.1);
+}
+
+.fa-facebook-square{
+	color: #3b5998;
+}
+
+.fa-twitter-square{
+	color: #00aced;
+}
+
+.fa-google-plus-square{
+	color:#d34836;
+}
+
+.copy{
+	cursor: pointer;
+}
+.copy:hover{
+	color: #fff;
+}
+
+.contact{
+	margin-top: 12px;
+}
+
+.footer{
+	margin-bottom: 0px;
+}
+#google-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #e7eaf0;
+  margin-top: 0px;
+}
+#cd-google-map {
+  position: relative;
+}
+#cd-zoom-in, #cd-zoom-out {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  margin-left: 10px;
+  background-color: rgba(211, 104, 104, 0.9);
+}
+.no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover {
+  background-color: #d36868;
+}
+#cd-zoom-in {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.map{
+	margin-top: -20px;
+}
+.fa-plus, .fa-minus{
+	margin-top: 10px;
+}
+.address{
+	color: #34495e;
+}
+
+@media screen and (max-width: 520px){
+	.carousel-indicators{
+		display: none;
+	}
+	.carousel-inner h4{
+		font-size: 20px;
+	}
+}
