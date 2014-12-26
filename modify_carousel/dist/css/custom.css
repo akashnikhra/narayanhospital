@@ -29,6 +29,11 @@ body{
 	font-size: 40px;
 }
 
+.footer{
+	color: #fff;
+	margin-top: 100px;
+}
+
 @media screen and (max-width: 400px){
 	.text{
 		margin-top: 50px;
