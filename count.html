@@ -3,52 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Narayan Hospital</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap -->
-    <link href="dist/css/bootstrap.css" rel="stylesheet">
-	<link href="dist/css/bootstrap-theme.css" rel="stylesheet">
-
-    <!-- siimple style -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="dist/css/custom.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
-
-  <body>
-
-	<div id="wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<i class="fa fa-plus-square fa-3x" style="color:#e74c3c;"></i><span style="font-size:50px;color:white;"> Narayan Hospital</span>
-					<h2 class="subtitle">We're working hard to improve our website and we'll ready to launch after</h2>
-					<div id="countdown"></div>
-				</div>
-				
-			</div>
-			<div class="row">
-				<div class="col-lg-6 col-lg-offset-3 copy">
-						<p class="copyright">Copyright &copy; 2014 - <a href="index.html">Narayan Hospital</a></p>
-				</div>
-			</div>		
-		</div>
-	</div>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.countdown.min.js"></script>
-	<script type="text/javascript">
-  $('#countdown').countdown('2015/01/01', function(event) {
-    $(this).html(event.strftime('%w weeks %d days <br /> %H hour %M minute %S second'));
-  });
-</script>
+  <body>  
+    
+      <video autoplay loop muted class="bgvideo" id="bgvideo">
+        <source src="1.mp4" type="video/mp4">
+      </video>
+      <div class="col-sm-12 col-md-12 col-lg-12 text-center text">
+        <h1><i class="fa fa-plus-square fa-lg" style="color:#e74c3c;"></i> Narayan Hospital</h1>
+        <h2>We Are Trying to make the User Interface Better</h2><br>
+        <div id="countdown"></div>
+      </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/jquery.countdown.min.js"></script>
+    <script type="text/javascript">
+        $('#countdown').countdown('2015/01/01', function(event) {
+          $(this).html(event.strftime('%w weeks %d days <br /> %H hour %M min %S sec'));
+        });
+    </script>
+    <script type="text/javascript">
+      var video = document.getElementById('bgvideo');
+      video.playbackRate = 0.7; 
+    </script>
   </body>
 </html>
