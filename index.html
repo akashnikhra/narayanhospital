@@ -17,6 +17,8 @@ $(window).load(function() {
 </head>
 <body>
 
+  <a href="#top" class="btn btn-danger arrow"><i class="fa fa-arrow-up fa-lg top"></i></a>
+
    <div id="spinner">
     <div class="loader">Loading...</div>
   </div>
@@ -298,6 +300,23 @@ $(window).load(function() {
     $('.collapse ul a').click(function(){
       $('.collapse ul li.active').removeClass('active');
       $(this).closest('li').addClass('active');
+    });
+  </script>
+  <script>
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        if($(window).scrollTop() > 550){
+          $('.arrow').show();
+        }else{
+          $('.arrow').hide();
+        }
+      });
+    });
+  </script>
+  <script>
+    $("a[href='#top']").click(function() {
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
     });
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0vumcEsNz90pnJ1Uzj0xVPOWZw_-fzzQ"></script>
