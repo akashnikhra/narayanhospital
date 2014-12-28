@@ -105,6 +105,11 @@ body{
 	opacity: 1;
 }
 
+.collapse li:hover{
+  background-color: #333;
+  color: #fff
+}
+
 .carousel-inner h4{
 	font-size: 30px;
 }
