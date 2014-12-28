@@ -294,6 +294,12 @@ $(window).load(function() {
     ); 
 });
   </script>
+  <script>
+    $('.collapse ul a').click(function(){
+      $('.collapse ul li.active').removeClass('active');
+      $(this).closest('li').addClass('active');
+    });
+  </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0vumcEsNz90pnJ1Uzj0xVPOWZw_-fzzQ"></script>
   <script src="dist/js/main.js"></script>
   

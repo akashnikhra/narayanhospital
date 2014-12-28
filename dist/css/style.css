@@ -105,7 +105,7 @@ body{
 	opacity: 1;
 }
 
-.collapse li:hover{
+.navbar-right li:hover{
   background-color: #1abc9c;
   color: black;
 }
