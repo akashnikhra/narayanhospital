@@ -105,6 +105,12 @@ body{
 	opacity: 1;
 }
 
+.navbar-right li{
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+
 .navbar-right li:hover{
   background-color: #1abc9c;
   color: black;
