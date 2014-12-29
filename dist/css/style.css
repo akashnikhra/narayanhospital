@@ -19,6 +19,36 @@ body{
     background: #000;
 }
 
+.navbar{
+  border-radius: 0px;
+  border-bottom:1px solid #000;
+}
+.navbar-default{
+  background-color: #222222;
+}
+
+.navbar-default .navbar-nav li{
+  transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-weight: bold;
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nar li:hover,
+.navbar-default .navbar-nar li:focus{
+    background-color: rgba(0,0,0,0.75);
+    color: #fff;
+}
+
+.btn{
+  border-radius: 0px;
+}
+
 /* end style */
 /* top scroll*/
 
@@ -132,7 +162,7 @@ body{
 /* end loading */
 
 #logo{
-	margin-top: -15px;
+	margin-top: -17px;
 	opacity: 0.7;
 	transition: opacity 0.7s;
 	-webkit-transition: opacity 0.7s;
@@ -140,17 +170,6 @@ body{
 }
 #logo:hover{
 	opacity: 1;
-}
-
-.navbar-right li{
-  transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-}
-
-.navbar-right li:hover{
-  background-color: #1abc9c;
-  color: black;
 }
 
 .carousel-inner h4{

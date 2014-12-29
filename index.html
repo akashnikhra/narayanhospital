@@ -17,13 +17,13 @@ $(window).load(function() {
 </head>
 <body>
 
-  <a href="#top" class="btn btn-danger btn-circle arrow" rel="tooltip" title="Move to the Top!"><i class="fa fa-arrow-up fa-lg top"></i></a>
+  <a href="javascript:;" class="btn btn-danger btn-circle arrow" rel="tooltip" title="Move to the Top!"><i class="fa fa-arrow-up fa-lg top"></i></a>
 
    <div id="spinner">
     <div class="loader">Loading...</div>
   </div>
 
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
           <div class="container">
               <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -308,7 +308,7 @@ $(window).load(function() {
     });
   </script>
   <script>
-    $("a[href='#top']").click(function() {
+    $(".arrow").click(function() {
       $("html, body").animate({ scrollTop: 0 }, "slow");
       return false;
     });
