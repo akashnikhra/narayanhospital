@@ -198,13 +198,13 @@ Image credits: unsplash.com
 .fade-carousel .carousel-indicators > li {
     margin: 2px;
     background-color: #16a085;
-    border-color: #34495e;
+    border-color: #fff;
     opacity: .7;
 }
 .fade-carousel .carousel-indicators > li.active {
   width: 12px;
   height: 12px;
-  opacity: 1;
+  background-color: #fff;
 }
 
 /********************************/
