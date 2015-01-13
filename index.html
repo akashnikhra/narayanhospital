@@ -44,51 +44,52 @@ $(window).load(function() {
               </div>
           </div>
       </div><!--- navigation bar end -->
+      <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
 
-      <div id="close">
-
-	<div id="myslider" class="carousel slide" data-ride="carousel">
-
-		<ol class="carousel-indicators">
-	        <li data-target="#myslider" data-slide-to="0" class="active"></li>
-	        <li data-target="#myslider" data-slide-to="1"></li>
-	        <li data-target="#myslider" data-slide-to="2"></li>
-          <li data-target="#myslider" data-slide-to="3"></li>
-      	</ol>
-
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<img src="img/1.jpg" alt="rishabh" class="img-responsive">
-				<div class="container">
-					<div class="carousel-caption">
-						<h4>A Hospital One can Trust</h4>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img src="img/2.jpg" alt="akash" class="img-responsive">
-				<div class="container">
-					<div class="carousel-caption">
-						<h4>Over 20000 man hours of experience</h4>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img src="img/3.jpg" alt="abhishek" class="img-responsive">
-				<div class="carousel-caption">
-					<h4>Madhya Pardesh Best Critical Care Services</h4>
-				</div>
-			</div>
-      <div class="item">
-        <img src="img/4.jpg" alt="rishabh" class="img-responsive">
-        <div class="container">
-          <div class="carousel-caption">
-            <h4>Best of the Consultants</h4>
-          </div>
-        </div>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+    <li data-target="#bs-carousel" data-slide-to="3"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>A Hospital One can Trust</h1> 
+        </hgroup>
       </div>
-		</div>
-	</div>
+    </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Over 20000 man hours of experience</h1>  
+        </hgroup>       
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-3"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Madhya Pardesh Best Critical Care Services</h1>   
+        </hgroup>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-4"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Best of the Consultants</h1>  
+        </hgroup>       
+      </div>
+    </div>
+  </div> 
+  </div>
 
   <div class="navbar navbar-inverse navbar-static text-center navi" role="navigation" id="chair">
       <a href="#chair" class="btn btn-lg btn-danger contact">Our Chairman</a>
@@ -253,7 +254,6 @@ $(window).load(function() {
             </div>
           </div>
     </div>
-    </div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="dist/js/bootstrap.min.js"></script>
@@ -265,7 +265,7 @@ $(window).load(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top -50
         }, 1000);
         return false;
       }

@@ -171,9 +171,6 @@ body{
 	opacity: 1;
 }
 
-.carousel-inner h4{
-	font-size: 30px;
-}
 
 .navi{
 	height: 70px;
@@ -182,16 +179,115 @@ body{
 .fa-plus-square{
 	color: #e74c3c;
 }
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
 
-.carousel-indicators>li{
-	background: #1abc9c;
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 95vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 95vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 2px;
+    background-color: #16a085;
+    border-color: #34495e;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
 }
 
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 3em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
 
-.img-responsive{
-	-webkit-filter: brightness(0.5);
-	-moz-filter: brightness(0.5);
-	filter:  brightness(0.5);
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3, 
+.fade-carousel .slides .slide-4{
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(../../img/1.jpg);
+  -webkit-filter: brightness(0.7);
+  -moz-filter: brightness(0.7);
+  filter:  brightness(0.7);
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url(../../img/2.jpg);
+  -webkit-filter: brightness(0.7);
+  -moz-filter: brightness(0.7);
+  filter:  brightness(0.7);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(../../img/3.jpg);
+  -webkit-filter: brightness(0.7);
+  -moz-filter: brightness(0.7);
+  filter:  brightness(0.7);
+}
+.fade-carousel .slides .slide-4 {
+  background-image: url(../../img/4.jpg);
+  -webkit-filter: brightness(0.7);
+  -moz-filter: brightness(0.7);
+  filter:  brightness(0.7);
+}
+
+.hero{
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 .profile {
@@ -286,13 +382,4 @@ body{
 }
 .address{
 	color: #34495e;
-}
-
-@media screen and (max-width: 520px){
-	.carousel-indicators{
-		display: none;
-	}
-	.carousel-inner h4{
-		font-size: 20px;
-	}
 }
